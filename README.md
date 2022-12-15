@@ -2,7 +2,7 @@
 
 Corso di Laurea triennale in <b>Informatica Umanistica</b>:
 
-Il progetto contenuto in questo <i>repository</i> è stato realizzato per l'esame di <b>Codifica di Testi</b> con il professor <i>Angelo Mario Del Grosso</i> da <b>Alice Mannino</b> .
+Il progetto contenuto in questo <i>repository</i> è stato realizzato per l'esame di <b>Codifica di Testi</b> con il professor <i>Angelo Mario Del Grosso</i> da <i>Alice Mannino</i> .
 
 Il progetto è stato validato con Xerces con il seguente comando:
 
