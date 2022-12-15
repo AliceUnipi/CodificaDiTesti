@@ -1,0 +1,236 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 2%; 
+    padding: 0; 
+    line-height: 1.6; 
+    font-size: 1.2rem; 
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f6f4;
+}
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+header {
+    padding: 2%;
+}
+
+.navbar {
+    list-style-type: none; 
+    padding: 2%;
+    text-align: center;
+}
+
+.navbar li {
+    display:inline-block;
+    background-color:#357e7e; 
+    margin: 1%;
+}
+.navbar li a {
+    display: block;
+    padding: 10px; 
+    text-decoration: none; 
+    color: #fff;
+}
+.navbar li a:hover {
+    background-color:#35527e; 
+}
+
+/* Titolo */
+#title, #bibliografia {
+    margin: 3%; 
+    text-align: center; 
+}
+
+/* Le informazioni generali */
+#informazioni.info img, .descrizione img{
+    width: 25%;
+    box-shadow: 10px 10px 5px lightgray;
+    margin: 5%;
+}
+.descrizione img {
+    width: 90%;
+}
+section#informazioni.info {
+    justify-content: space-between;
+    display: flex;
+}
+
+/* Descrizione */
+.descrizione {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+.descrizione div {
+    margin: 25px;
+}
+.card_descrizione h2 {
+    text-align: center; 
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 1%;
+    background-color: #357e7e; 
+    color: #fff; 
+}
+
+/* Lista bottoni */
+#lista_bottoni {
+    display: flex; justify-content: center;
+}
+#lista_bottoni button {
+    margin: 15px; cursor: pointer; padding: 10px; border-radius: 10px; opacity: 0.7;
+}
+#lista_bottoni > button:hover {
+    opacity: 1;
+}
+#cancellazione {
+    background-color: rgb(77, 77, 146);
+}
+#abbreviazione, .expan {
+    background-color: rgb(224, 138, 152);
+}
+
+/* Per il corretto funzionamento del bottone */
+.reg {
+    display: none;
+}
+#correzione, .reg {
+    background-color: hsl(137, 100%, 50%);
+}
+#termini, .yellow { 
+    background-color: #ffff00;
+}
+#aggiunta, .purple {
+    background-color: rgb(218, 116, 252);
+}
+#glottonimo, .green {
+    background-color: rgb(103, 162, 127);
+}
+#toponimo, .light_coral {
+    background-color: lightcoral;
+}
+
+/* Pagine 25 e 26 */
+.immagini{
+    width: 400px;
+    display: inline-block;
+    text-align: center;
+    margin:10px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+#pagine25e26 {
+    margin-top: 100px;
+}
+.pagina h2 {
+    text-align: center;
+}
+.testo_pagina {
+    padding: 35px; 
+    width: 80%; 
+    margin: auto; 
+    display: flex; 
+    justify-content: space-between;
+}
+.testo {
+    max-width: 50%; 
+    margin: 25px;
+}
+.testo b {
+    margin-right: 5px;
+}
+.abbr, .expan, span, u {
+    margin-left: 5px; 
+    margin-right: 5px;
+}
+.expan, .none, .del, .add {
+    display: none;
+}
+.acquamarine, .line_through, .inline_block, footer h3, footer p {
+    display: inline-block;
+}
+.del {
+    text-decoration: line-through;
+}
+.pericope {
+    display:block; 
+    background-color: #35527e; 
+    color: #fff; 
+    margin-top: 25px; 
+    padding: 5px; 
+}
+.terms {
+    text-decoration: none; 
+    color: inherit;
+}
+
+/* Terminologia */
+#terminologia {
+    margin: 10px auto; 
+    width: 70%;
+}
+
+/* Scroll top */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #35527e; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #357e7e; /* Add a dark-grey background on hover */
+  }
+
+/* Footer */
+footer {
+    margin-top: 100px; 
+    background-color:#35527e; 
+    color: #fff; 
+    padding: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px){
+
+    /* Header */
+    header{flex-wrap: wrap;}
+    ul.navbar{display: inline;}
+    .navbar{width: 100%; display: none;}
+    .navbar li{display: block; width: 100%;}
+    .navbar li a{text-align: center;}
+    footer h3, footer p, .block {display: block;}
+
+    /* Informazioni titolo */
+    #title, #bibliografia{text-align: initial;}
+
+    /* Caratteristiche */
+    .descrizione, .lista_bottoni{flex-wrap: wrap;}
+    .descrizione div, .descrizione div img{width: 100%;}
+
+    /* Pagine 25 e 26 */
+    #pagine25e26{margin-top: 50px; padding: 15px;}
+    .lista_bottoni button{display: block; width: 100%;}
+    .testo_pagina{padding: 0; width: 100%; flex-wrap: wrap;}
+    .testo{max-width: 100%;}
+
+    /* Terminologia */
+    #terminologia{width: 100%;}
+
+}

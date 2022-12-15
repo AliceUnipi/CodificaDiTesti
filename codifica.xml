@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!-- Appunti per le prime conferenze all’Università di Ginevra
+    Codice archivistico “BGE Ms. fr. 3951/1.1-3”
+
+    Filename: codifica.xml
+    Author: Alice Mannino
+    Date: 2022-11 -->
+
+    <!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<!-- Radice -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <!-- Metadati relativi al documento -->
+        <fileDesc>
+            <!-- Descrizione bibliografica file elettronico e fonte originaria -->
+            <titleStmt>
+                <!-- Codifica del titolo dell'edizione digitale -->
+                <title xml:lang="fr">Trois premières conférences à l'Université</title>
+                <title xml:lang="it">Le prime tre conferenze all'Università</title>
+                <author xml:lang="fr" ref="#FDS">Ferdinad De Saussure</author>
+            </titleStmt>
+
+            <!-- Edizione testo -->
+            <editionStmt>
+                <edition n="DigitalEdition">
+                    Edizione digitale 
+                    <date when="2022-11">Novembre 2022</date>
+                </edition>
+                <respStmt>
+                    <resp>Progetto coordinato da:</resp>
+                    <persName>
+                        <forename>Angelo</forename>
+                        <forename>Mario</forename>
+                        <surname>Del Grosso</surname>
+                    </persName>
+                </respStmt>
+                <respStmt xml:id="AM">
+                    <resp>Codifica a cura di:</resp>
+                    <persName>
+                        <forename>Alice</forename>
+                        <surname>Mannino</surname>
+                    </persName>
+                </respStmt>
+                <!-- Responsabili del contenuto -->
+                <respStmt xml:id="B_E">
+                    <resp>Trascrizione a cura di:</resp>
+                    <persName ref="#SB">Simon Bouquet</persName>
+                    <persName ref="#RE">Rudolf Engler</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Traduzione a cura di:</resp>
+                    <persName ref="#EF">Emanuele Fadda</persName>
+                </respStmt>
+            </editionStmt>
+
+            <!-- Info sulla pubblicazione e diffusione -->
+            <publicationStmt>
+                <publisher>Università di Pisa</publisher>
+                <pubPlace ref="#PI">Pisa</pubPlace>
+                <availability status="free"> 
+                    <p>Il testo è disponile, perché di dominio pubblico</p>
+                </availability>
+                <date when="8 settembre 2022">8 settembre 2022</date>
+            </publicationStmt>
+
+            <!-- Descrizione della fonte dalla quale è tratto il testo da codificare con il tag che riguarda il manoscritto-->
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                    <!-- Elementi che fanno parte dell'identificatore del manoscritto, per identificarlo-->
+                        <placeName>
+                            <country xml:id="SV"> Svizzera </country>
+                            <settlement ref="#GE"> Ginevra</settlement>
+                        </placeName>
+                        <institution> Manoscritti e archivio privato</institution>
+                        <!-- Dove è conservato il manoscritto-->
+                        <repository>Biblioteca di Ginevra</repository>
+                        <!-- Numero identificatore dell'oggetto un'unità bibliografica-->
+                        <idno>BGE Ms. fr. 3951/1.1-3</idno>
+                    </msIdentifier>
+                    
+                    <!-- Contenuto intellettuale del manoscritto-->
+                    <msContents>
+                        <!-- Parte di manoscritto che ne descrive il contenuto intellettuale -->
+                        <msItem>
+                            <docAuthor ref="#FDS"> Ferdinand de Saussure</docAuthor>
+                            <title xml:lang="fr" type="main">Phonétique du grec et du latin </title>
+                            <!-- Data del documento nel frontespizio in cui whem è opzionale-->
+                            <docImprint> <pubPlace ref="#GE">Ginevra</pubPlace>,<docDate>Novembre 1891</docDate></docImprint>
+                            <textLang mainLang="fr"> Il manoscritto è in francese e la traduzione in italiano</textLang>
+                        </msItem>
+                    </msContents>
+
+                    <!-- Descrizione della grandezza del documento sempre nel modulo descrizione manoscritto-->
+                    <physDesc>
+                        <!-- Composto da descrizione del supporto e layout-->
+                        <objectDesc form="leaf"> 
+                            <supportDesc material="paper" source="https://archives.bge-geneve.ch/ark:/17786/vtae78f994bf3242bef">
+                                <support>Fogli di carta.</support>
+                                <!-- Grandezza del documento è un altro elemento che si può trovare in file description-->
+                                <extent>
+                                    <measureGrp unit="pages">
+                                        <measure quantity="30">30 +</measure>
+                                        <measure quantity="15">15 +</measure>
+                                        <measure quantity="22">22 pagine +</measure>
+                                        <measure quantity="1">1 foglietto.</measure>
+                                    </measureGrp> 
+                                </extent>
+                                <condition> 
+                                    <p>Il testo presenta correzioni, cancellature e aggiunte, ma lo stato è buono.</p>
+                                </condition>
+                            </supportDesc>
+                            <!-- Descrizione impaginazione del manoscritto -->
+                            <layoutDesc>
+                                <!-- C. = specifica il numero di colonne per pagina; 
+                                    R.l. = specifica il numero di righe per colonna -->
+                                <layout columns="1" ruledLines="20 30">
+                                    <p>Le pagine sono lunghe in media tra le 20 e 30 righe </p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!-- Tipi di scrittura del testo, in questo caso l'attributo ha come valore 1-->
+                        <handDesc hands="1">
+                            <p> Le pagine all'interno del taccuino sono state scritte a mano da <persName ref="#FDS">Ferdinand De Saussure.</persName></p>
+                        </handDesc>
+                        <!-- Info sulla stampa della risorsa-->
+                        <typeDesc> 
+                            <p>Lo stile utilizzato dall'autore è il corsivo, visivamente molto inclinato verso destra 
+                            che quindi rende la lettura difficile </p>
+                        </typeDesc>
+                    </physDesc>
+
+                    <!-- Storia del manoscritto-->
+                    <history>
+                        <origin notAfter="11-1891">
+                            <!-- Ci dà informazioni  sull'origine del manoscritto; 
+                                notAfter specifica l'ultima data possibile per quel determinato evento -->
+                            <p>
+                              Si tratta di appunti per le prime conferenze all'Università di
+                              <placeName ref="#ginevra">Ginevra</placeName>
+                              , in parte utilizzati per le prime lezioni
+                              <!-- placeName = nome luogo -->
+                              del corso di
+                              <foreign xml:lang="fr">Phonétique du grec et du latin</foreign>
+                              .
+                              <!-- foreign identifica una parola/frase come nonappartenente alla lingua in uci stiamo scrivendo -->
+                              Questi appunti erano probabilmente destinati alla pubblicazione di una brochure.
+                            </p>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        
+        <!-- Descrizione non bibliografica del testo-->
+        <profileDesc>
+            <langUsage>
+                <language ident="fr">French</language>
+            </langUsage>
+            <textDesc> 
+                <channel mode="ws" /> 
+                <!-- Canale di trasmissione del testo come scritto:
+                l'attributo mode specifica il modo del canale rispetto a parlato e scritto: "ws"= scritto per essere parlato -->
+                <constitution type="single"/>
+                <!-- Descrizione della composizione interna:
+                qui un unico testo completo-->
+                <derivation type="original" />
+                <!-- D.= descrive la natura e la portata dell'originalità di questo testo: qui un testo originale -->
+                <domain type="education"/>
+                <!-- Descrive il contesto per cui è sttao creato il testo:
+                qui contesto scolastico -->
+                <factuality type="fact" />
+                <!-- Descrive quanto il testo può essere immaginario:
+                qui il testo parla di fatti ed è informativo-->
+                <interaction type="none" active="singular" passive="group" />
+                <!-- Descrive la natura, la centralità e il grado di ogni interazione fra coloro che producono e coloro che sperimentano il testo;
+                qui type="partial" = interazione perziale;
+                active="singular" = un singolo partecipante attivo;
+                passive="group" = il testo è destinato ad un gruppo di partecipanti indefinito ma limitato-->                <preparedness type="draft" />
+                <!--si può aggiungere degree come attributo-->
+                <preparedness type="draft" /> 
+                <!-- Descrive quanto un testo possa essere stato preparao o spontaneo:
+                qui una brutta copia-->
+                <purpose type="inform" degree="high" /> 
+                <!-- Indica lo scopo comunicativo del testo:
+                qui si tratta di un testo informativo/educativo, con un'alta certezza -->
+            </textDesc>
+            
+            <settingDesc>
+                <!-- Descrive l'ambientazione dell'interazione linguistica-->
+                <setting>
+                    <date when="13-11-1981">13-11-1981</date>
+                    <name>Testo per la biblioteca di <placeName ref="#GE">Ginevra</placeName></name>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+
+    <!-- Riproduzione fonte primaria -->
+    <facsimile>
+        <!-- Prolusioni 1 - Pagina 25 -->
+        <surface n="1" xml:id="foglio25">
+            <!-- Superficie scritta come uno spazio di coordinate bidimensionale,
+            raggruppando opzionalmente una o più rappresentazioni grafiche di quello spazio,
+            zone di interesse all'interno di quello spazio e trascrizioni della scrittura al loro interno -->
+
+            <graphic url='immagini/foglio25.jpg' width='3045px' height='4556px' />
+            <!-- Posizione di un'immagine, un'illustrazione o un diagramma incorporati -->
+
+            <!-- Qualsiasi area bidimensionale all'interno di un elemento di superficie -->
+            <zone ulx="666" uly="347" lrx="2690" lry="555" xml:id="P25_R1" />   
+            <zone ulx="556" uly="570" lrx="2696" lry="725" xml:id="P25_R2" />
+            <zone ulx="596" uly="737" lrx="2708" lry="901" xml:id="P25_R3" />
+            <zone ulx="621" uly="909" lrx="2662" lry="1038" xml:id="P25_R4" />
+            <zone ulx="582" uly="1060" lrx="2719" lry="1182" xml:id="P25_R5" />
+            <zone ulx="550" uly="1194" lrx="2715" lry="1353" xml:id="P25_R6" />
+            <zone ulx="599" uly="1370" lrx="2731" lry="1506" xml:id="P25_R7" />
+            <zone ulx="616" uly="1521" lrx="2700" lry="1666" xml:id="P25_R8" />
+            <zone ulx="600" uly="1673" lrx="2710" lry="1842" xml:id="P25_R9" />
+            <zone ulx="644" uly="1846" lrx="2667" lry="1984" xml:id="P25_R10" />
+            <zone ulx="635" uly="1988" lrx="2656" lry="2164" xml:id="P25_R11" />
+            <zone ulx="702" uly="2172" lrx="2703" lry="2329" xml:id="P25_R12" />
+            <zone ulx="712" uly="2337" lrx="2659" lry="2494" xml:id="P25_R13" />
+            <zone ulx="783" uly="2506" lrx="2672" lry="2668" xml:id="P25_R14" />
+            <zone ulx="752" uly="2679" lrx="2663" lry="2825" xml:id="P25_R15" />
+            <zone ulx="751" uly="2841" lrx="2637" lry="2997" xml:id="P25_R16" />
+            <zone ulx="738" uly="3017" lrx="2636" lry="3184" xml:id="P25_R17" />
+            <zone ulx="771" uly="3194" lrx="2621" lry="3323" xml:id="P25_R18" />
+            <zone ulx="775" uly="3333" lrx="2620" lry="3457" xml:id="P25_R19"/>
+            <zone ulx="742" uly="3466" lrx="2659" lry="3640" xml:id="P25_R20" />
+            <zone ulx="763" uly="3647" lrx="2551" lry="3784" xml:id="P25_R21" />
+            <zone ulx="780" uly="3794" lrx="1717" lry="3935" xml:id="P25_R22" />
+            <zone ulx="891" uly="3942" lrx="2585" lry="4105" xml:id="P25_R23" />
+            <zone ulx="712" uly="4100" lrx="2438" lry="4245" xml:id="P25_R24" />
+        </surface>
+
+        <!-- Prolusioni 1 - Pagina 26 -->
+        <surface n="1" xml:id="foglio26">
+            <graphic url='immagini/foglio26.jpg' width='3308px' height='4164px' />
+
+            <zone ulx="732" uly="376" lrx="2942" lry="578" xml:id="P26_R1"/>
+            <zone ulx="740" uly="578" lrx="2967" lry="734" xml:id="P26_R2"/>
+            <zone ulx="738" uly="731" lrx="2816" lry="847" xml:id="P26_R3"/>
+            <zone ulx="767" uly="846" lrx="1771" lry="958" xml:id="P26_R4"/>
+            <zone ulx="1009" uly="963" lrx="2312" lry="1112" xml:id="P26_R5"/>
+            <zone ulx="969" uly="1113" lrx="3013" lry="1244" xml:id="P26_R6"/>
+            <zone ulx="742" uly="1235" lrx="3035" lry="1362" xml:id="P26_R7"/>
+            <zone ulx="759" uly="1365" lrx="2982" lry="1478" xml:id="P26_R8"/>
+            <zone ulx="794" uly="1482" lrx="2998" lry="1598" xml:id="P26_R9"/>
+            <zone ulx="792" uly="1608" lrx="2976" lry="1748" xml:id="P26_R10"/>
+            <zone ulx="785" uly="1753" lrx="2963" lry="1859" xml:id="P26_R11"/>
+            <zone ulx="804" uly="1860" lrx="3035" lry="1985" xml:id="P26_R12"/>
+            <zone ulx="810" uly="1996" lrx="3058" lry="2109" xml:id="P26_R13"/>
+            <zone ulx="811" uly="2118" lrx="3043" lry="2241" xml:id="P26_R14"/>
+            <zone ulx="791" uly="2250" lrx="3043" lry="2367" xml:id="P26_R15"/>
+            <zone ulx="799" uly="2379" lrx="3063" lry="2482" xml:id="P26_R16"/>
+            <zone ulx="803" uly="2487" lrx="3067" lry="2631" xml:id="P26_R17"/>
+            <zone ulx="804" uly="2629" lrx="3056" lry="2738" xml:id="P26_R18"/>
+            <zone ulx="813" uly="2751" lrx="3058" lry="2852" xml:id="P26_R19"/>  
+
+            <!-- Nota a margine -->
+            <zone ulx="296" uly="2874" lrx="831" lry="3913" xml:id="P26_N1"/> 
+            <zone ulx="814" uly="2860" lrx="3040" lry="2981" xml:id="P26_R20"/>
+            <zone ulx="818" uly="2981" lrx="2990" lry="3087" xml:id="P26_R21"/> 
+            <zone ulx="826" uly="2994" lrx="2944" lry="3093" xml:id="P26_R22"/>
+            <zone ulx="825" uly="3126" lrx="3062" lry="3224" xml:id="P26_R23"/>
+            <zone ulx="872" uly="3268" lrx="3004" lry="3361" xml:id="P26_R24"/>
+            <zone ulx="864" uly="3399" lrx="2941" lry="3461" xml:id="P26_R25"/>
+            <zone ulx="850" uly="3502" lrx="2969" lry="3602" xml:id="P26_R26"/>  
+            <zone ulx="858" uly="3634" lrx="2929" lry="3721" xml:id="P26_R27"/>
+            <zone ulx="882" uly="3770" lrx="3030" lry="3874" xml:id="P26_R28"/>
+        </surface>
+
+        <!-- Prolusioni 1 - Pagina 26 Retro -->
+        <surface n="1" xml:id="foglio26R">
+            <graphic url='immagini/foglio26R.jpg' width='2144px' height='2816px' />
+            <zone ulx="324" uly="281" lrx="1923" lry="2343" />
+        </surface>
+    </facsimile>
+
+    <!-- Text contiene: group con testi nelle 2 lingue per ogni text, e back con note -->
+    <text xml:lang="fr" xml:id="foglio25-26-fr" subtype="manuscript">
+        <body>
+            <!-- Foglio 25 -->
+            <div facs="#pagina25" n="25">
+                <!-- Inizio pagina -->
+                <pb n="25" facs="#P25Intera" />
+                <!-- Pericope -->
+                <ab type="pericope" n="1" xml:id="foglio25_Par1">
+                    <!-- Anonymous block = 
+                    utilizzato per codificare unità di testo generiche, per codificare i paragrafi, che numeriamo con n e a cui associamo un id  -->
+                    
+                    <!-- Inizio linea L1 -->
+                    <lb xml:id="foglio25_L1" n="1" facs="#P25_R1" />
+                    Et l'autre locution 
+                    <!-- add = per indicare un'aggiunta di parole/frasi in un punto rispetto al testo, 
+                        place = la posizione dell'aggiunta-->
+                    <add resp="#FDS" place="above">
+                        figurée
+                    </add> que nous allons
+                    
+                    <!-- Inizio linea L2 -->
+                    <lb xml:id="foglio25_L2" n="2" facs="#P25_R2" />
+                    exécuter avec
+                    <!-- ANTROPONIMO Gaston Paris-->
+                    <persName>
+                        <roleName type="honorific" full="abb">M.</roleName>
+                        <forename>Gaston</forename>
+                        <surname>Paris</surname>
+                    </persName> c'est celle  
+                    
+                    <!-- Inizio linea L3 -->
+                    <lb xml:id="foglio25_L3" n="3" facs="#P25_R3" />
+                    <!--del = qualcosa è stato cancellato dall'autore, può essere leggibile o meno -->
+                    <del rend="overstrike">du langue</del>
+                    <!-- emph = enfasi della scrittura, in questo caso ottenuta attraverso una sottolineatura-->
+                    <emph rend="underline">
+                         du <lang>francais</lang>,
+                        <!-- term = per indicare un termine tecnico -->                        <term ref="#langue" >langue</term> 
+                        fille du
+                    </emph>
+
+                    <!-- Inizio linea L4 -->
+                    <lb xml:id="foglio25_L4" n="4" facs="#P25_R4" />
+                    <emph rend="underline"><lang>latin</lang>,</emph> - ou du <emph rend="underline"><lang>latin</lang></emph>
+                    <!-- Choice =  usato quando il codificatore codifica con ciò che ritiene giusto -->
+                    <choice><reg resp="#B_E">,</reg></choice>
+                    <term ref="#langue">langue</term><emph rend="underline">mère</emph>
+                    des
+
+                    <!-- Inizio linea L5 -->
+                    <lb xml:id="foglio25_L5" n="5" facs="#P25_R5" />
+                    <term ref="#langue">langues</term> <lang>romanes</lang>. Il n'y a pas de
+                    <term ref="#langue">langues</term> 
+
+                    <!-- Inizio linea L6 -->
+                    <lb xml:id="foglio25_L6" n="6" facs="#P25_R6" />
+                    filles ni de <term ref="#langue">langues</term> mères, <choice><reg resp="#B_E">,</reg></choice>
+                    <add resp="#FDS" place="above"> il n'y en a nulle <choice><orig>p</orig><reg resp="#B_E">part</reg></choice>,</add>
+                    <del rend="overstrike">
+                        Nous <gap reason="illegible" extent="5" unit="chars"/>
+                        <!-- gap = punto in cui il materiale è stato omesso dalla trascrizione, sia per ragioni editoriali aggiunti nell'intestazione TEI, sia perché il materiale è illegibile o incomprensibile. -->
+                    </del>
+
+                    <!-- Inizio linea L7 -->
+                    <lb xml:id="foglio25_L7" n="7" facs="#P25_R7" />
+                    <del rend="overstrike">
+                        toujours devant cette même idée dejas
+                    </del>
+                    
+                    <!-- Inizio linea L8 -->
+                    <lb xml:id="foglio25_L8" n="8" facs="#P25_R8" />
+                    <del rend="overstrike">
+                        treuse en <gap reason="illegible" extent="3" unit="chars"/> effets
+                    </del>
+                    il n'y en a jamais 
+                    
+                    <!-- Inizio linea L9 -->
+                    <lb xml:id="foglio25_L9" n="9" facs="#P25_R9" />
+                    eu.
+                </ab>
+                <!-- Pericope -->
+                <ab type="pericope" n="2" xml:id="foglio25_Par2">
+                    Il y a 
+                    <del rend="overstrike"> certains etat de langue</del>
+
+                    <!-- Inizio linea L10 -->
+                    <lb xml:id="foglio25_L10" n="10" facs="#P25_R10" />
+                    <choice><orig>d</orig><reg resp="#B_E">dans</reg></choice> chaque région du globe un
+                    <term ref="#etat">état de</term>
+
+                    <!-- Inizio linea L11 -->
+                    <lb xml:id="foglio25_L11" n="11" facs="#P25_R11" />
+                    <term ref="#langue">langue</term> 
+                    <del rend="overstrike"> qui </del>
+                    <add resp="#FDS" place="above">
+                        <del rend="overstrike"><gap reason="illegible" extent="11" unit="chars"/>
+                        </del> qui 
+                    </add> se <term ref="#trasforme">trasforme</term> lentement <choice><reg resp="#B_E">,</reg></choice>
+
+                    <!-- Inizio linea L12 -->
+                    <lb xml:id="foglio25_L12" n="12" facs="#P25_R12" />
+                    de semaine en semaine, 
+                    <del rend="overstrike">
+                        de de de
+                    </del>
+                    <add resp="#FDS" place="above">
+                        de mois en mois,
+                    </add>
+
+                    <!-- Inizio linea L13 -->
+                    <lb xml:id="foglio25_L13" n="13" facs="#P25_R13" />
+                    <del rend="overstrike">
+                        d'année en année
+                    </del><add resp="#FDS" place="above">
+                        d'année en année
+                    </add><del rend="overstrike">
+                        ou
+                    </del><add resp="#FDS" place="above">
+                        et
+                    </add> de siècle en
+
+                    <!-- Inizio linea L14 -->
+                    <lb xml:id="foglio25_L14" n="14" facs="#P25_R14" />
+                    siècle, comme nous le verrons 
+                    <!-- abbr = un'abbreviazione che può essere di vari tipi
+                        expan = per indicare la parola estesa-->
+                    <abbr>tt</abbr><expan><ex>tout</ex></expan> à l'
+                    <abbr>heu</abbr><expan><ex>heure</ex></expan>,
+
+                    <!-- Inizio linea L15 -->
+                    <lb xml:id="foglio25_L15" n="15" facs="#P25_R15" />
+                    mais il n'
+                    <del rend="overstrike"><gap reason="illegible" extent="2" unit="chars"/></del>
+                    y a jamais eu nulle
+
+                    <!-- Inizio linea L16 -->
+                    <lb xml:id="foglio25_L16" n="16" facs="#P25_R16" />
+                    part parturition 
+                    <add resp="#FDS" place="above">
+                        <!-- ex = per indicare le lettere che il codificatore ha dovuto aggiungere e am per indicare la punteggiatura dell'abbreviazione -->
+                        ou <abbr>procréat<am>.</am></abbr><expan><ex>procréation</ex></expan>
+                    </add> d'un <del rend="overstrike">nouvelle</del>
+
+                    <!-- Inizio linea L17 -->
+                    <lb xml:id="foglio25_L17" n="17" facs="#P25_R17" />
+                    <term ref="#idiome">idiome</term> 
+                    <add resp="#FDS" place="above">
+                        <abbr>nouv</abbr><expan><ex>nouveau</ex></expan> 
+                    </add> par un <term ref="#idiome">idiome</term> antérieur,
+                    
+                    <!-- Inizio linea L18 -->
+                    <lb xml:id="foglio25_L18" n="18" facs="#P25_R18" />
+                    cela est en dehors de tout ce que nous
+
+                    <!-- Inizio linea L19 -->
+                    <lb xml:id="foglio25_L19" n="19" facs="#P25_R19" />
+                    voyons, <del rend="overstrike">en fait</del>
+                    comme de <abbr>tt</abbr><expan><ex>tout</ex></expan> ce que nous
+
+                    <!-- Inizio linea L20 -->
+                    <lb xml:id="foglio25_L20" n="20" facs="#P25_R20" />
+                    pouvons nous représenter 
+                    <add resp="#FDS" place="above">
+                        en <term ref="#idee">idée</term><choice><reg resp="#B_E">,</reg></choice>
+                    </add> étant 
+                    <add resp="#FDS" place="above">
+                        <abbr>simplem</abbr><expan><ex>simplement</ex></expan>
+                    </add> données les
+
+                    <!-- Inizio linea L21 -->
+                    <lb xml:id="foglio25_L21" n="21" facs="#P25_R21" />
+                    conditions où nous 
+                    <term ref="#parle">parlons</term> 
+                    <del rend="overstrike">notre</del> chacun
+
+                    <!-- Inizio linea L22 -->
+                    <lb xml:id="foglio25_L22" n="22" facs="#P25_R22" />
+                    notre <term ref="#langue">langue</term> maternelle.
+
+                    <!-- Inizio linea L23 -->
+                    <lb xml:id="foglio25_L23" n="23" facs="#P25_R23" />
+                    <del rend="overstrike">
+                        <gap reason="illegible" extent="6" unit="chars"/>
+                        espèce de scission dans la 
+                    </del>
+
+                    <!-- Inizio linea L24 -->
+                    <lb xml:id="foglio25_L24" n="24" facs="#P25_R24" />
+                    <del rend="overstrike">
+                        tradition de la langue à travers les
+                    </del>
+                </ab>
+            </div>
+
+            <!-- Foglio 26 -->
+            <div facs="#pagina26" n="26">
+                <!-- Inizio pagina -->
+                <pb n="26" facs="#P26Intera" />
+                <!-- Pericope -->
+                <ab type="pericope" n="1" xml:id="foglio26_Par1">
+                    <!-- Inizio linea L1 -->
+                    <lb xml:id="foglio26_L1" n="1" facs="#P26_R1" />
+                    Que peut-on dire<choice><reg resp="#B_E">,</reg></choice> d'après ce qui vient d'être
+
+                    <!-- Inizio linea L2 -->
+                    <lb xml:id="foglio26_L2" n="2" facs="#P26_R2" />
+                    posé, de la <emph rend="underline"> naissance </emph> 
+                    et de la  <emph rend="underline"> mort </emph> des 
+                    <term ref="#langue"> langues </term> 
+
+                    <!-- Inizio linea L3 -->
+                    <lb xml:id="foglio26_L3" n="3" facs="#P26_R3" />
+                    qui jouent un 
+                    <choice><orig>gd</orig><reg resp="#B_E">grand</reg></choice> rôle dans ce que l'on dit
+
+                    <!-- Inizio linea L4 -->
+                    <lb xml:id="foglio26_L4" n="4" facs="#P26_R4" />
+                    d'elles <choice><orig>d</orig><reg resp="#B_E">dans</reg></choice> ce monde<choice><reg resp="#B_E">?</reg></choice>
+
+                    <!-- Inizio linea L5 -->
+                    <lb xml:id="foglio26_L5" n="5" facs="#P26_R5" />
+                    Commençons par la mort.
+                </ab>
+
+                <!-- Pericope -->
+                <ab type="pericope" n="2" xml:id="foglio26_Par2">
+                    <!-- Inizio linea L6 -->
+                    <lb xml:id="foglio26_L6" n="6" facs="#P26_R6" />
+                    Une langue ne peut pas mourir 
+                    <mentioned xml:lang="fr">naturel<pc>-</pc><lb break="no"/>lement</mentioned>
+                    <!-- La parola continua nella riga successiva -->
+
+                    <!-- Inizio linea L7 -->
+                    <lb xml:id="foglio26_L7" n="7" facs="#P26_R7" />
+                    et de sa belle mort. Elle ne peut <mentioned xml:lang="fr">mou<pc>-</pc><lb break="no"/>rir</mentioned> que 
+                    <add resp="#FDS" place="above">
+                        <del rend="overstrike">par accident</del>
+                        de mort violente.
+                    </add>
+                </ab>
+
+                <!-- Pericope -->
+                <ab type="pericope" n="3" xml:id="foglio26_Par3">
+                    Le seul moyen qu'elle
+
+                    <!-- Inizio linea L8 -->
+                    <lb xml:id="foglio26_L8" n="8" facs="#P26_R8" />
+                    ait de cesser, c'est <del rend="overstrike">qu</del> de se voir supprimée
+
+                    <!-- Inizio linea L9 -->
+                    <lb xml:id="foglio26_L9" n="9" facs="#P26_R9" />
+                    par force, par <del rend="overstrike">cause</del> une cause tout à fait
+
+                    <!-- Inizio linea L10 -->
+                    <lb xml:id="foglio26_L10" n="10" facs="#P26_R10" />
+                    extérieure aux <term ref="#faitsdul">faits du langage</term>. C'est-à-dir
+
+                    <!-- Inizio linea L11 -->
+                    <lb xml:id="foglio26_L11" n="11" facs="#P26_R11" />
+                    par <abbr>ex<am>.</am></abbr><expan><ex>example</ex></expan> par l'extermination totale du peuple
+
+                    <!-- Inizio linea L12 -->
+                    <lb xml:id="foglio26_L12" n="12" facs="#P26_R12" />
+                    qui la <term ref="#parle">parle</term>, comme il arrivera prochainement <choice><orig>pr</orig><reg resp="#B_E">pour</reg></choice>
+
+                    <!-- Inizio linea L13 -->
+                    <lb xml:id="foglio26_L13" n="13" facs="#P26_R13" />
+                    les idiomes des <lang>Peaux-Rouges</lang> d'
+                    <!--Toponimo -->
+                    <name type="place" ref="#AmeriqueduN"><abbr>Ameriq<am>.</am>du N<am>.</am></abbr><expan><ex>Amérique du Nord</ex></expan></name>
+                </ab>
+
+                <!-- Pericope -->
+                <ab type="pericope" n="4" xml:id="foglio26_Par4">
+                    Ou bien 
+
+                    <!-- Inizio linea L14 -->
+                    <lb xml:id="foglio26_L14" n="14" facs="#P26_R14" />
+                    par imposition d'un nouvel <term ref="#idiome">idiome</term>
+                    <del rend="overstrike">apporté</del>
+
+                    <!-- Inizio linea L15 -->
+                    <lb xml:id="foglio26_L15" n="15" facs="#P26_R15" />
+                    <del rend="overstrike">par une 
+                        <gap reason="illegible" extent="5" unit="chars"/> plus forte à la fais supérieure et
+                    </del>
+
+                    <!-- Inizio linea L16 -->
+                    <lb xml:id="foglio26_L16" n="16" facs="#P26_R16" />
+                    <del rend="overstrike">politique.</del> 
+                    appartenant à une race plus forte;
+
+                    <!-- Inizio linea L17 -->
+                    <lb xml:id="foglio26_L17" n="17" facs="#P26_R17" />
+                    il faut <abbr>généralm</abbr><expan><ex>généralement</ex></expan> non 
+                    <abbr>seul<am>.</am></abbr><expan><ex>seulment</ex></expan> une domination
+
+                    <!-- Inizio linea L18 -->
+                    <lb xml:id="foglio26_L18" n="18" facs="#P26_R18" />
+                    <abbr>politiq<am>.</am></abbr><expan><ex>politique</ex></expan><choice><reg resp="#B_E">,</reg></choice>
+                    mais aussi une supériorité de civilisation,
+                </ab>
+
+                <!-- Pericope -->
+                <ab type="pericope" n="5" xml:id="foglio26_N1">
+                    <add resp="#FDS" place="margin">                 <!-- NOTA A MARGINE -->
+                        et souvent 
+                        il faut 
+                        la <abbr>présen</abbr><expan><ex>présence</ex></expan> 
+                        d'<choice><abbr>1</abbr><expan resp="#B_E"><num type="cardinal" value="1">une</num></expan></choice><term ref="#langue">langue</term> 
+                        <term ref="ecrite" rend="underline">écrite</term> qu'on 
+                        impose par 
+                        <!-- Istituzioni -->
+                        l'<orgName>École</orgName>, par 
+                        l'<orgName>Église</orgName>, par 
+                        l'<abbr>admin<am>.</am></abbr><expan><ex>administration</ex></expan><choice><reg resp="#B_E">...</reg></choice> et 
+                        <!-- superimposed = l'autore ha sovrascritto una lettera/parola con qualcos'altro per correggerla -->
+                            p<mod type="subst"><del rend="overwritten">e</del>
+                                <add resp="#FDS" place="superimposed">a</add>
+                            </mod>r 
+                            <abbr>tts</abbr><expan><ex>toutes</ex></expan> <abbr>ls</abbr><expan><ex>les</ex></expan> avenues 
+                        de la vie 
+                        <abbr>publiq<am>.</am></abbr><expan><ex>publique</ex></expan> 
+                        et <abbr>priv</abbr><expan><ex>privée</ex></expan><choice><reg resp="#B_E">.</reg></choice>
+                    </add>
+                </ab>
+
+                <!-- Pericope -->
+                <ab type="pericope" n="6" xml:id="foglio26_Par6">
+                    <!-- Inizio linea L19 -->
+                    <lb xml:id="foglio26_L19" n="19" facs="#P26_R19" />
+                    C'est le cas qui s'est cent fois répété 
+                    <choice><orig>cl</orig><reg resp="#B_E">clans</reg></choice> 
+                    l'<term ref="histoire">histoire</term><choice><reg resp="#B_E">:</reg></choice>
+
+                    <!-- Inizio linea L20 -->
+                    <lb xml:id="foglio26_L20" n="20" facs="#P26_R20" />
+                    le cas du <lang>gaulois</lang> de 
+                    <!-- Toponimo -->
+                    <name type="place" ref="#Gaule">Gaule</name> supplanté par le
+
+                    <!-- Inizio linea L21 -->
+                    <lb xml:id="foglio26_L21" n="21" facs="#P26_R21" />
+                    <lang>latin</lang>, le cas des <lang>nègres</lang> d'
+                    <!-- Toponimo -->
+                    <name type="place" ref="#Haïti">Haïti</name> qui 
+                    <term ref="#parle">parlent</term> <lang>français</lang>,
+
+                    <!-- Inizio linea L22 -->
+                    <lb xml:id="foglio26_L22" n="22" facs="#P26_R22" />
+                    du fellah <lang>égyptien</lang> qui <term ref="#parle">parle</term> <lang>arabe</lang>; 
+                    <del rend="overstrike">souvent</del> 
+
+                    <!-- Inizio linea L23 -->
+                    <lb xml:id="foglio26_L23" n="23" facs="#P26_R23" />
+                    <del rend="overstrike">le fait n'est qu'apparent: par example</del>
+
+                    <!-- Inizio linea L24 -->
+                    <lb xml:id="foglio26_L24" n="24" facs="#P26_R24" />
+                    le cas 
+                    d<mod type="subst">
+                        <del rend="overwritten">a</del>     <!-- La "a" viene sovrascritta e quindi corretta con "e" = "de" -->
+                        <add resp="#FDS" place="superimposed">e</add>
+                    </mod> l'habitant de 
+                    <!-- Toponimo -->
+                    <name type="place" ref="#Genève">Genève</name> qui parle le
+
+                    <!-- Inizio linea L25 -->
+                    <lb xml:id="foglio26_L25" n="25" facs="#P26_R25" />
+                    <term ref="dialecte">dialecte</term> de 
+                    <!-- Toponimo -->
+                    l'<name type="place" ref="#ÎledeF">Île-de-France</name> et non la langue
+
+                    <!-- Inizio linea L26 -->
+                    <lb xml:id="foglio26_L26" n="26" facs="#P26_R26" />
+                    autochtone qu'il parlait <date>il y a <choice><orig>qqes</orig><reg resp="#B_E">quelques</reg></choice> siècles</date>. Mais
+                </ab>
+            </div>
+
+            <!-- Traduzione -->
+            <div type="traduzionepag25">
+                <ab n="1" corresp="#foglio25_Par1" xml:lang="it">
+                    E l’altra locuzione figurata di cui<choice><reg resp="#EF">,</reg></choice>
+                    con Gaston Paris <choice><reg resp="#EF">,</reg></choice> faremo giustizia, è quella del 
+                    <hi rend="italic">francese, lingua figlia del latino </hi> – o del 
+                    <hi rend="italic">latino, lingua madre</hi> delle lingue romanze. Non ci sono lingue figlie né lingue madri, non ce n’è da nessuna parte, non ce ne sono mai state.
+                </ab>
+                <ab n="2" corresp="#foglio25_Par2" xml:lang="it">
+                    Vi è in ogni regione del globo uno stato di lingua che si trasforma lentamente, di settimana in settimana, di mese in mese, di anno in anno e di secolo in secolo, come vedremo tra pochissimo, ma non c’è mai stato da nessuna parte il parto o la procreazione di un idioma nuovo da parte di un idioma anteriore, questo è al di fuori di tutto ciò che si vede, come anche di tutto ciò che possiamo rappresentarci in idea, essendo date semplicemente le condizioni in cui ognuno di noi parla la sua lingua materna.
+                </ab>
+            </div>
+
+            <div type="traduzionepag26">
+                <ab n="1" corresp="#foglio26_Par1" xml:lang="it">
+                    Che si può dire, in base a ciò che si è sostenuto, della 
+                    <hi rend="italic">nascita</hi> e della 
+                    <hi rend="italic">morte</hi> delle lingue, che rivestono un ruolo importante in ciò che di esse si dice a questo mondo? Cominciamo dalla morte.
+                </ab>
+                <ab n="2" corresp="#foglio26_Par2" xml:lang="it">
+                    Una lingua non può morire di morte naturale. Non può morire che di morte violenta. 
+                </ab>
+                <ab n="3" corresp="#foglio26_Par3" xml:lang="it">
+                    Il solo modo che abbia di cessare, è di vedersi soppressa per forza, per una causa del tutto esterna ai fatti di linguaggio. Cioè ad esempio per lo sterminio totale del popolo che la parla, come succederà prossimamente per gli idiomi dei Pellirossa dell’America del Nord.
+                </ab>
+                <ab n="4" corresp="#foglio26_Par4" xml:lang="it">
+                    Oppure per imposizione di un nuovo idioma appartenente a una razza più forte; generalmente ci vuole non soltanto una dominazione politica, ma anche una superiorità di civilizzazione, 
+                </ab>
+                <ab n="5" corresp="#foglio26_N1" xml:lang="it">
+                    e spesso ci vuole la presenza di una lingua 
+                    <hi rend="italic">scritta</hi> che viene imposta dalla Scuola, dalla Chiesa, dall’amministrazione... e attraverso tutti i canali della vita pubblica e privata.
+                </ab>
+                <ab n="6" corresp="#foglio26_Par6" xml:lang="it">
+                    È un caso che si è ripetuto cento volte nella storia: il caso del gallo di Gallia soppiantato dal latino, il caso dei neri di Haiti che parlano francese, del fellah egiziano che parla arabo; il caso dell’abitante di Ginevra che parla il dialetto dell’Île-de-France e non la lingua autoctona che parlava qualche secolo fa. Ma
+                </ab>
+            </div>
+        </body>
+
+        <!-- Sempre dentro text serve ad indicare l'appendice dopo il testo -->
+        <back>
+            <!-- Appendice -->
+            <div type="appendice">
+                
+                <!-- Terminologia -->
+                <list type="terminologia">
+                    <label>
+                        <term xml:id="langue" xml:lang="fr">Langue</term>
+                        <term ref="#langue" xml:lang="it">Lingua</term>
+                    </label>
+                    <item>
+                        <!-- Identifica una parola o un sintagma che fornisce la definizione per qualche altra parola-->
+                        <gloss target="#langue" xml:lang="it" source="https://it.wikipedia.org/wiki/Lingua_(linguistica)">
+                            La <hi rend="bold">lingua</hi> è il sistema o forma storicamente determinata attraverso il quale gli appartenenti a una comunità si esprimono e comunicano tra loro attraverso l'uso di un determinato linguaggio.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="etat" xml:lang="fr">État</term>
+                        <term ref="#etat" xml:lang="it">Stato</term>
+                    </label>
+                    <item>
+                        <gloss target="#etat" xml:lang="it" source="https://it.wiktionary.org/wiki/stato">
+                            Con <hi rend="bold">stato</hi> si intende una situazione o condizione di una cosa o persona, osservata in un particolare momento; può essere temporanea o permanente.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="trasforme" xml:lang="fr">Trasforme</term>
+                        <term ref="#trasforme" xml:lang="it">Trasforma</term>
+                    </label>
+                    <item>
+                        <gloss target="#trasforme" xml:lang="it" source="https://www.treccani.it/vocabolario/trasformare/">
+                            <hi rend="bold">Trasformare</hi> significa ridurre in forma diversa dalla primitiva, far mutare di figura e di aspetto, di struttura e di funzione.                      
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="idiome" xml:lang="fr">Idiome</term>
+                        <term ref="#idiome" xml:lang="it">Idioma</term>
+                    </label>
+                    <item>
+                        <gloss target="#idiome" xml:lang="it" source="https://www.treccani.it/vocabolario/idioma/">
+                            L'<hi rend="bold">idioma</hi> è la lingua propria e particolare di una nazione.                      
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="idee" xml:lang="fr">Idee</term>
+                        <term ref="#idee" xml:lang="it">Idea</term>
+                    </label>
+                    <item>
+                        <gloss target="#idee" xml:lang="it" source="https://www.treccani.it/vocabolario/idea/">
+                            Con <hi rend="bold">idea</hi> si intende ogni singolo contenuto del pensiero, ogni entità mentale, e più in partic. la rappresentazione di un oggetto alla mente, la nozione che la mente si forma o riceve di una cosa reale o immaginaria.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="parle" xml:lang="fr">Parle</term>
+                        <term ref="#parle" xml:lang="it">Parla</term>
+                    </label>
+                    <item>
+                        <gloss target="#parle" xml:lang="it" source="https://www.treccani.it/vocabolario/idea/">
+                            <hi rend="bold">Parlare</hi> signifca esprimere uno o più significati grazie all'uso della parola.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="faitsdul" xml:lang="fr">Faits du langage</term>
+                        <term ref="#faitsdul" xml:lang="it">Fatti di linguaggio</term>
+                    </label>
+                    <item>
+                        <gloss target="#parle" xml:lang="it" source="https://it.wikipedia.org/wiki/Linguaggio#Il_linguaggio_verbale_umano">
+                            Il <hi rend="bold">linguaggio</hi> è una forma di comunicazione tra due o più individui attraverso un complesso determinato di suoni, gesti, simboli e movimenti dotati di significato, che definiscono una lingua comune ad uno specifico ambiente di interazione.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="ecrite" xml:lang="fr">Écrite</term>
+                        <term ref="#ecrite" xml:lang="it">Scritto</term>
+                    </label>
+                    <item>
+                        <gloss target="#ecrite" xml:lang="it" source="https://www.treccani.it/vocabolario/scritto/">
+                            Con <hi rend="bold">scritto</hi> si intende ogni espressione linguistica realizzata per mezzo della tecnica della scrittura.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="histoire" xml:lang="fr">Histoire</term>
+                        <term ref="#histoire" xml:lang="it">Storia</term>
+                    </label>
+                    <item>
+                        <gloss target="#histoire" xml:lang="it" source="https://www.treccani.it/vocabolario/storia/">
+                            La <hi rend="bold">storia</hi> è l'esposizione ordinata di fatti e avvenimenti umani del passato, quali risultano da un’indagine critica volta ad accertare sia la verità di essi, sia le connessioni reciproche per cui è lecito riconoscere in essi un’unità di sviluppo. 
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="dialecte" xml:lang="fr">Dialecte</term>
+                        <term ref="#dialecte" xml:lang="it">Dialetto</term>
+                    </label>
+                    <item>
+                        <gloss target="#dialecte" xml:lang="it" source="https://www.treccani.it/vocabolario/dialetto/">
+                            Il <hi rend="bold">dialetto</hi> è un sistema linguistico adoperato in un ambito geografico limitato, che non ha raggiunto o che ha perduto diffusione e prestigio di fronte a un altro sistema linguistico diventato dominante e riconosciuto come ufficiale, cioè la lingua nazionale.
+                        </gloss>
+                    </item>
+                </list>
+
+                <!-- Ferdinand De Saussure -->
+                <listPerson>
+                    <person xml:id="FDS">
+                        <persName >
+                            <ref target="https://it.wikipedia.org/wiki/Ferdinand_de_Saussure" />
+                            <forename>Ferdinand</forename>
+                            <surname>De Saussure</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <note> 
+                            È stato un linguista e semiologo svizzero, considerato fondatore della linguistica moderna, della branca che si occupa dello studio dei segni: strutturalismo.
+                        </note>
+                        <birth>
+                            <date when="26-11-1857">26 novembre 1857</date>
+                            <placeName ref="#ginevra">
+                                <settlement>Ginevra</settlement>
+                                <country>Svizzera</country>
+                            </placeName>
+                        </birth>
+                        <death>
+                            <date when="22-02-1913">22 febbraio 1913</date>
+                            <placeName>
+                                <settlement>Vufflens-le-Château</settlement>
+                                <country>Svizzera</country>
+                            </placeName>
+                        </death>
+                    </person>
+                </listPerson>
+
+                <!-- Riferimenti bibiografici -->
+                <listBibl>                    
+                    <bibl xml:id="ACLib" xml:lang="fr">
+                        <author ref="#AC">
+                            <forename>Alessandro</forename>
+                            <surname>Chidichimo</surname>
+                        </author>
+                        <title>Cahiers <persName ref="#FDS">Ferdinand de Saussure</persName></title>
+                        <pubPlace ref="#ginevra"><placeName ref="#ginevra">Ginevra</placeName></pubPlace>
+                        <publisher>Librairie Droz</publisher>
+                        <date when="2009">2009</date>
+                    </bibl>
+                    
+                    <bibl xml:id="EFLib">
+                        <author xml:id="EF">
+                            <forename>Emanuele</forename>
+                            <surname>Fadda</surname>
+                        </author>
+                        <title type="main" level="m">Lingua e mente sociale</title>
+                        <title type="sub">Per una teoria delle istituzioni linguistiche a partire da Saussure e Mead</title>
+                        <pubPlace><placeName ref="#acireale">Acireale</placeName></pubPlace>
+                        <publisher>Bonanno Editore</publisher>
+                        <date when="2006">2006</date>
+                        <biblScope unit="volume">1</biblScope>
+                    </bibl>
+                    
+                    <bibl xml:id="TDMLib">
+                        <author ref="#FDS">
+                            <forename>Ferdinand</forename>
+                            <surname>De Saussure</surname>
+                        </author>
+                        <author xml:id="TDM">
+                            <forename>Tullio</forename>
+                            <surname>De Mauro</surname>
+                        </author>
+                        <title>Corso di linguistica generale, introduzione, traduzione e commento di Tullio De Mauro</title>
+                        <pubPlace><placeName ref="#roma">Roma</placeName></pubPlace>
+                        <date when="1976">1976</date>
+                        <publisher>Editori Laterza</publisher>
+                    </bibl>
+                </listBibl>
+                
+                <listPlace>
+                    <place xml:id="ginevra">
+                        <placeName ref="https://it.wikipedia.org/wiki/Ginevra">Ginevra</placeName>
+                        <settlement>Ginevra</settlement>
+                        <country>Svizzera</country>
+                    </place>
+                    <place xml:id="acireale">
+                        <placeName ref="https://it.wikipedia.org/wiki/Acireale">Acireale</placeName>
+                        <settlement type="P25_Region">Sicilia</settlement>
+                        <country>Italia</country>
+                    </place>
+                    <place xml:id="roma">
+                        <placeName ref="https://it.wikipedia.org/wiki/Roma">Roma</placeName>
+                        <settlement type="region">Lazio</settlement>
+                        <country>Italia</country>
+                    </place>
+                </listPlace>
+            </div>
+        </back>
+    </text>
+</TEI>
