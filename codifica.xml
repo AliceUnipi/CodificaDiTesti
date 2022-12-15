@@ -205,7 +205,7 @@
             raggruppando opzionalmente una o più rappresentazioni grafiche di quello spazio,
             zone di interesse all'interno di quello spazio e trascrizioni della scrittura al loro interno -->
 
-            <graphic url='immagini/foglio25.jpg' width='3045px' height='4556px' />
+            <graphic url='foglio25.jpg' width='3045px' height='4556px' />
             <!-- Posizione di un'immagine, un'illustrazione o un diagramma incorporati -->
 
             <!-- Qualsiasi area bidimensionale all'interno di un elemento di superficie -->
@@ -237,7 +237,7 @@
 
         <!-- Prolusioni 1 - Pagina 26 -->
         <surface n="1" xml:id="foglio26">
-            <graphic url='immagini/foglio26.jpg' width='3308px' height='4164px' />
+            <graphic url='foglio26.jpg' width='3308px' height='4164px' />
 
             <zone ulx="732" uly="376" lrx="2942" lry="578" xml:id="P26_R1"/>
             <zone ulx="740" uly="578" lrx="2967" lry="734" xml:id="P26_R2"/>
@@ -274,7 +274,7 @@
 
         <!-- Prolusioni 1 - Pagina 26 Retro -->
         <surface n="1" xml:id="foglio26R">
-            <graphic url='immagini/foglio26R.jpg' width='2144px' height='2816px' />
+            <graphic url='foglio26R.jpg' width='2144px' height='2816px' />
             <zone ulx="324" uly="281" lrx="1923" lry="2343" />
         </surface>
     </facsimile>
