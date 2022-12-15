@@ -40,7 +40,7 @@
 
                     <!-- Sezione autore -->
                     <section id="informazioni" class="info">
-                        <img src="immagini/ferdinandS.jpg" alt="author_img" />
+                        <img src="ferdinandS.jpg" alt="author_img" />
                         <div id="bio" class="card_descrizione">
                             <xsl:apply-templates select="//tei:listPerson" /> 
                         </div>
@@ -63,7 +63,7 @@
                     <!-- Sezione storia editoriale -->
                     <section class="descrizione">
                         <div>
-                            <img src="immagini/ginevra.jpg" alt="università_ginevra_img"/>
+                            <img src="ginevra.jpg" alt="università_ginevra_img"/>
                         </div>
                         <div class="card_descrizione">
                             <xsl:apply-templates select="//tei:history" />
