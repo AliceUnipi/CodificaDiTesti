@@ -177,7 +177,7 @@
                 <!-- Descrive la natura, la centralità e il grado di ogni interazione fra coloro che producono e coloro che sperimentano il testo;
                 qui type="partial" = interazione perziale;
                 active="singular" = un singolo partecipante attivo;
-                passive="group" = il testo è destinato ad un gruppo di partecipanti indefinito ma limitato-->                <preparedness type="draft" />
+                passive="group" = il testo è destinato ad un gruppo di partecipanti indefinito ma limitato-->               
                 <!--si può aggiungere degree come attributo-->
                 <preparedness type="draft" /> 
                 <!-- Descrive quanto un testo possa essere stato preparao o spontaneo:
